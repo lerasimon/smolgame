@@ -1,0 +1,158 @@
+body{
+    background-image: url(background.jpeg);
+    background-size:cover;
+    margin:0;
+    display:flex;
+    min-height:100vh;
+}
+
+/*this is the layout part*/
+.content {
+    display:flex;
+    flex:1;
+}
+
+.col-1 {
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.topleft {
+    flex:1;
+}
+ .middleleft {
+     flex:1;
+ }
+
+ .col-2 {
+    display:flex;
+
+    flex:1;
+    flex-direction:column;
+}
+
+.topright {
+    flex:1;
+}
+
+.middleright {
+    flex:1;
+}
+
+.bottomright {
+    flex:1;
+}
+
+/*this is grid part*/
+
+.grid {
+
+    display:grid;
+    align-content:center;
+    
+}
+
+.grid-container {
+
+    height:400px;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+    display:grid;
+    justify-items:right;
+}
+
+/*this is animation part*/
+
+.grid-container .lightbulb {
+  max-height: 100px;
+  transition-property: max-height;
+  transition-duration: 750ms;
+  transition-timing-function: linear;
+}
+
+.grid-container .lightbulb:hover {
+    max-height: 200px;
+}
+
+.grid-container .corgi {
+  max-height: 200px;
+  transition-property: max-height;
+  transition-duration: 750ms;
+  transition-timing-function: linear;
+}
+
+.grid-container .corgi:hover {
+    max-height: 300px;
+}
+
+.grid-container .decor {
+  max-height: 100px;
+  transition-property: max-height;
+  transition-duration: 750ms;
+  transition-timing-function: linear;
+
+}
+
+.grid-container .decor:hover {
+    max-height: 200px;
+}
+
+.grid-container .ball {
+  max-height: 100px;
+  transition-property: max-height;
+  transition-duration: 750ms;
+  transition-timing-function: linear;
+}
+
+.grid-container .ball:hover {
+        max-height: 200px;
+    }
+
+.grid-container .present {
+    max-height: 100px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+    }
+      
+.grid-container .present:hover {
+    max-height: 300px;
+    }
+
+    .grid-container .candle {
+        max-height: 50px;
+        transition-property: max-height;
+        transition-duration: 750ms;
+        transition-timing-function: linear;
+        }
+          
+    .grid-container .candle:hover {
+        max-height: 100px;
+        }
+
+        .grid-container .wallclock {
+            max-height: 250px;
+            transition-property: max-height;
+            transition-duration: 750ms;
+            transition-timing-function: linear;
+            }
+              
+        .grid-container .wallclock:hover {
+            max-height: 300px;
+            }
+
+            .grid-container .icicle {
+                max-height: 200px;
+                transition-property: max-height;
+                transition-duration: 750ms;
+                transition-timing-function: linear;
+                }
+                  
+            .grid-container .icicle:hover {
+                max-height: 250px;
+                }
+
+    
+
+
+

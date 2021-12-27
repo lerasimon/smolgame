@@ -86,14 +86,21 @@ aside {
 
 .four2 {
     display:flex;
-    align-items: flex-end;
-    justify-content:end;
-    flex:5;
+    align-items: center;
+    justify-content:flex-end;
+    flex:7;
     background-color: rgba(128, 130, 245, 0.5);
 }
 
 .five {
     flex:1;
+    display:flex;
+    justify-content:center;
+    background-color: rgba(245, 57, 57, 0.5);
+}
+
+.five2 {
+    flex:3;
     display:flex;
     justify-content:center;
     background-color: rgba(245, 57, 57, 0.5);
@@ -180,7 +187,7 @@ aside {
 }
                   
 .four2 .corgi:hover {
-    max-height: 300px;
+    max-height: 350px;
 }
 
 .two .sock {

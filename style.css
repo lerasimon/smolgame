@@ -1,158 +1,213 @@
-body{
+body {
     background-image: url(background.jpeg);
-    background-size:cover;
+    background-size: cover;
     margin:0;
     display:flex;
     min-height:100vh;
 }
 
-/*this is the layout part*/
 .content {
     display:flex;
     flex:1;
+  
 }
 
 .col-1 {
+    flex-direction: column;
     display:flex;
-    flex-direction:column;
-    flex:1;
+    flex:1;  
 }
 
-.topleft {
-    flex:1;
-}
- .middleleft {
-     flex:1;
- }
-
- .col-2 {
+.col-2 {
+    flex-direction: column;
     display:flex;
-
     flex:1;
+}
+
+article {
+    display:flex;
+    flex:1;
+}
+
+aside {
+    display:flex;
+    flex:1;
+}
+
+.inner-col {
     flex-direction:column;
-}
-
-.topright {
+    display:flex;
     flex:1;
+   
 }
 
-.middleright {
+.one {
+    background-color: rgba(245, 153, 153, 0.5);
+    display:flex;
+    align-items: flex-end;
+    justify-content:center;
+    flex:1;   
+}
+
+.two {
+    background-color: rgba(153, 227, 245, 0.5);
     flex:1;
+    display:flex;
+    justify-content:center
 }
 
-.bottomright {
+.three {
+    background-color: rgba(245, 237, 128, 0.5);
+    flex:3;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.three2 {
+    background-color: rgba(245, 237, 128, 0.5);
     flex:1;
+    display:flex;
+    justify-content:end;
 }
 
-/*this is grid part*/
-
-.grid {
-
-    display:grid;
-    align-content:center;
-    
+.three3 {
+    background-color: rgba(245, 237, 128, 0.5);
+    flex:3;
+    display:flex;
 }
 
-.grid-container {
+.four {
+    display:flex;
+    justify-content:center;
+    flex:5;
+    background-color: rgba(128, 130, 245, 0.5);
+}
 
-    height:400px;
-    grid-template: 1fr 1fr/ 1fr 1fr;
-    display:grid;
-    justify-items:right;
+.four2 {
+    display:flex;
+    align-items: flex-end;
+    justify-content:end;
+    flex:5;
+    background-color: rgba(128, 130, 245, 0.5);
+}
+
+.five {
+    flex:1;
+    display:flex;
+    justify-content:center;
+    background-color: rgba(245, 57, 57, 0.5);
+}
+
+.six {
+    flex:4;
+    background-color: rgba(97, 243, 97, 0.5);
 }
 
 /*this is animation part*/
 
-.grid-container .lightbulb {
-  max-height: 100px;
-  transition-property: max-height;
-  transition-duration: 750ms;
-  transition-timing-function: linear;
-}
-
-.grid-container .lightbulb:hover {
-    max-height: 200px;
-}
-
-.grid-container .corgi {
-  max-height: 200px;
-  transition-property: max-height;
-  transition-duration: 750ms;
-  transition-timing-function: linear;
-}
-
-.grid-container .corgi:hover {
-    max-height: 300px;
-}
-
-.grid-container .decor {
-  max-height: 100px;
-  transition-property: max-height;
-  transition-duration: 750ms;
-  transition-timing-function: linear;
-
-}
-
-.grid-container .decor:hover {
-    max-height: 200px;
-}
-
-.grid-container .ball {
-  max-height: 100px;
-  transition-property: max-height;
-  transition-duration: 750ms;
-  transition-timing-function: linear;
-}
-
-.grid-container .ball:hover {
-        max-height: 200px;
-    }
-
-.grid-container .present {
+.five .clock {
     max-height: 100px;
     transition-property: max-height;
     transition-duration: 750ms;
     transition-timing-function: linear;
     }
-      
-.grid-container .present:hover {
-    max-height: 300px;
-    }
-
-    .grid-container .candle {
-        max-height: 50px;
-        transition-property: max-height;
-        transition-duration: 750ms;
-        transition-timing-function: linear;
-        }
-          
-    .grid-container .candle:hover {
-        max-height: 100px;
-        }
-
-        .grid-container .wallclock {
-            max-height: 250px;
-            transition-property: max-height;
-            transition-duration: 750ms;
-            transition-timing-function: linear;
-            }
               
-        .grid-container .wallclock:hover {
-            max-height: 300px;
-            }
+.five .clock:hover {
+     max-height: 300px;
+}
 
-            .grid-container .icicle {
-                max-height: 200px;
-                transition-property: max-height;
-                transition-duration: 750ms;
-                transition-timing-function: linear;
-                }
+.three .present {
+    max-height: 100px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+}
                   
-            .grid-container .icicle:hover {
-                max-height: 250px;
-                }
+.three .present:hover {
+    max-height: 200px;
+}
 
-    
+.two .ball {
+    max-height: 100px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+}
+                  
+.two .ball:hover {
+    max-height: 120px;
+}
+
+.three2 .jingle {
+    max-height: 80px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+}
+                  
+.three2 .jingle:hover {
+    max-height: 120px;
+}
+
+.one .angel {
+    max-height: 100px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+}
+                  
+.one .angel:hover {
+    max-height: 120px;
+}
+
+.four .lightbulb {
+    max-height: 100px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+}
+                  
+.four .lightbulb:hover {
+    max-height: 200px;
+}
+
+.four2 .corgi {
+    max-height: 200px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+}
+                  
+.four2 .corgi:hover {
+    max-height: 300px;
+}
+
+.two .sock {
+    max-height: 150px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+}
+                  
+.two .sock:hover {
+    max-height: 300px;
+}
+
+.three3 .wallclock {
+    max-height: 200px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+}
+                  
+.three3 .wallclock:hover {
+    max-height: 300px;
+}
+
+
+
+
 
 
 

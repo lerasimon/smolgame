@@ -8,7 +8,6 @@ body {
 /*this is the layout part*/
 
 .content {
-    background-color: rgba(43, 213, 243, 0.5);
     display:flex;
     flex-direction: column;
     height:100vh;
@@ -18,14 +17,12 @@ body {
     height:50%;
     flex:1;
     display:flex;
-    background-color: rgba(243, 43, 43, 0.5);
 }
 
 .container-bottom {
     height:50%;
     flex:1;
     display:flex;
-    background-color: rgba(90, 245, 84, 0.5);
 }
 
 .top {
@@ -40,40 +37,50 @@ body {
 
 article {
     display:flex;
-    background-color: rgba(146, 84, 245, 0.5);
     flex:1;
 }
 
 aside {
     display:flex;
-    background-color: rgba(247, 233, 48, 0.5);
     flex:1;
 }
 
 .left {
-    background-color: rgba(248, 247, 228, 0.5);
-    flex:1;
+    flex:2;
     display:flex;
     flex-direction:column;
 }
 
 .right {
-    background-color: rgba(186, 239, 252, 0.5);
-    flex:1;
+    flex:3;
     display:flex;
     justify-content:flex-end;
 }
 
-.middle {
-    flex:1;
-}
 
 .one {
+    display:flex;
+    justify-content:right;
     flex:1;
 }
 
 .two {
+    display:flex;
+    justify-content:right;
     flex:1;
+}
+
+.middle {
+    flex:2;
+    display:flex;
+    justify-content:center;
+}
+
+.middlepresent {
+    flex:2;
+    display:flex;
+    justify-content:center;
+    align-items: flex-end;
 }
 
 /* this is transitions part */
@@ -109,10 +116,52 @@ aside {
   }
 
 .right .corgi:hover {
-    max-height: 250px;
+    max-height: 300px;
 }
-  
 
+.one .angel {
+    max-height: 100px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+  }
+
+.one .angel:hover {
+    max-height: 180px;
+}
+
+.two .ball {
+    max-height: 100px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+  }
+
+.two .ball:hover {
+    max-height: 180px;
+}
+
+.middle .decor {
+    max-height: 100px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+  }
+
+.middle .decor:hover {
+    max-height: 180px;
+}
+
+.middlepresent .present {
+    max-height: 100px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+  }
+
+.middlepresent .present:hover {
+    max-height: 180px;
+}
 
 
 

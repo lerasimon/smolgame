@@ -153,7 +153,7 @@ aside {
 }
 
 .middlepresent .present {
-    max-height: 100px;
+    max-height: 150px;
     transition-property: max-height;
     transition-duration: 750ms;
     transition-timing-function: linear;

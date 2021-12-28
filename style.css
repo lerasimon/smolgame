@@ -2,214 +2,118 @@ body {
     background-image: url(background.jpeg);
     background-size: cover;
     margin:0;
-    display:flex;
-    min-height:100vh;
-    min-width:100vw;
+    padding: 0;
 }
+
+/*this is the layout part*/
 
 .content {
+    height:100vh;
+    background-color: rgba(43, 213, 243, 0.5);
     display:flex;
-    flex:1; 
+    flex-direction: column;
 }
 
-.col-1 {
-    flex-direction: column;
+.container-top {
+    flex:1;
     display:flex;
-    flex:1;  
+    background-color: rgba(243, 43, 43, 0.5);
 }
 
-.col-2 {
-    flex-direction: column;
+.container-bottom {
+    flex:1;
+    display:flex;
+    background-color: rgba(90, 245, 84, 0.5);
+}
+
+.top {
     display:flex;
     flex:1;
 }
 
+.bottom {
+    display:flex;
+    flex:1;    
+}
+
 article {
     display:flex;
+    background-color: rgba(146, 84, 245, 0.5);
     flex:1;
 }
 
 aside {
     display:flex;
+    background-color: rgba(247, 233, 48, 0.5);
     flex:1;
 }
 
-.inner-col {
-    flex-direction:column;
-    display:flex;
+.left {
+    background-color: rgba(248, 247, 228, 0.5);
     flex:1;
-   
+    display:flex;
+    flex-direction:column;
+}
+
+.right {
+    background-color: rgba(186, 239, 252, 0.5);
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.middle {
+    flex:1;
 }
 
 .one {
-    background-color: rgba(245, 153, 153, 0.5);
-    display:flex;
-    align-items: flex-end;
-    justify-content:center;
-    flex:1;   
+    flex:1;
 }
 
 .two {
-    background-color: rgba(153, 227, 245, 0.5);
     flex:1;
-    display:flex;
-    justify-content:center
 }
 
-.three {
-    background-color: rgba(245, 237, 128, 0.5);
-    flex:3;
-    display:flex;
-    align-items: flex-end;
-}
+/* this is transitions part */
 
-.three2 {
-    background-color: rgba(245, 237, 128, 0.5);
-    flex:1;
-    display:flex;
-    justify-content:end;
-}
 
-.three3 {
-    background-color: rgba(245, 237, 128, 0.5);
-    flex:3;
-    display:flex;
-}
-
-.four {
-    display:flex;
-    justify-content:center;
-    flex:5;
-    background-color: rgba(128, 130, 245, 0.5);
-}
-
-.four2 {
-    display:flex;
-    justify-content:flex-end;
-    flex:7;
-    background-color: rgba(128, 130, 245, 0.5);
-}
-
-.five {
-    flex:1;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(245, 57, 57, 0.5);
-}
-
-.five2 {
-    flex:3;
-    display:flex;
-    justify-content:center;
-    background-color: rgba(245, 57, 57, 0.5);
-}
-
-.six {
-    flex:4;
-    background-color: rgba(97, 243, 97, 0.5);
-}
-
-/*this is animation part*/
-
-.five .clock {
-    max-height: 100px;
+.middle .lightbulb {
+    max-height: 180px;
     transition-property: max-height;
     transition-duration: 750ms;
     transition-timing-function: linear;
-    }
-              
-.five .clock:hover {
-     max-height: 300px;
+  }
+
+.middle .lightbulb:hover {
+    max-height: 250px;
 }
 
-.three .present {
-    max-height: 100px;
+.right .lightbulb {
+    max-height: 180px;
     transition-property: max-height;
     transition-duration: 750ms;
     transition-timing-function: linear;
-}
-                  
-.three .present:hover {
-    max-height: 200px;
+  }
+
+.right .lightbulb:hover {
+    max-height: 250px;
 }
 
-.two .ball {
-    max-height: 100px;
+.right .corgi {
+    max-height: 230px;
     transition-property: max-height;
     transition-duration: 750ms;
     transition-timing-function: linear;
-}
-                  
-.two .ball:hover {
-    max-height: 120px;
-}
+  }
 
-.three2 .jingle {
-    max-height: 80px;
-    transition-property: max-height;
-    transition-duration: 750ms;
-    transition-timing-function: linear;
+.right .corgi:hover {
+    max-height: 250px;
 }
-                  
-.three2 .jingle:hover {
-    max-height: 120px;
-}
+  
 
-.one .angel {
-    max-height: 100px;
-    transition-property: max-height;
-    transition-duration: 750ms;
-    transition-timing-function: linear;
-}
-                  
-.one .angel:hover {
-    max-height: 120px;
-}
 
-.four .lightbulb {
-    max-height: 100px;
-    transition-property: max-height;
-    transition-duration: 750ms;
-    transition-timing-function: linear;
-}
-                  
-.four .lightbulb:hover {
-    max-height: 200px;
-}
 
-.four2 .corgi {
-    max-height: 200px;
-    transition-property: max-height;
-    transition-duration: 750ms;
-    transition-timing-function: linear;
-}
-                  
-.four2 .corgi:hover {
-    max-height: 350px;
-}
 
-.two .sock {
-    max-height: 150px;
-    transition-property: max-height;
-    transition-duration: 750ms;
-    transition-timing-function: linear;
-}
-                  
-.two .sock:hover {
-    max-height: 300px;
-}
-
-.three3 .wallclock {
-    max-height: 200px;
-    transition-property: max-height;
-    transition-duration: 750ms;
-    transition-timing-function: linear;
-}
-                  
-.three3 .wallclock:hover {
-    max-height: 300px;
-}
 
 
 
